@@ -14,12 +14,23 @@ h1 {
     margin: .67em 0;
     font-size: 1.75rem;
     line-height: 1.25;
+    font-weight: 500;
 }
+
+h3 {
+    font-size: 1.4rem;
+    margin-bottom: 30px;
+    color: #424242;
+    font-weight:500
+    
+}
+
+
 
 p {
     font-size: 1rem;
     line-height: 1.8;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
 }
 
 .text-center {
@@ -43,6 +54,47 @@ p {
     box-sizing: border-box;
 }
 
+.button:hover{
+    background-color: black;
+
+}
+
+/* links */
+.links a {
+    display: inline-block;
+    margin: 10px 20px 0 0;
+    text-decoration: none;
+    color: #387ED1;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.links a:hover {
+    color: #2a61b1;
+}
+
+/* columns structure*/
+
+.five.columns {
+    flex: 0 0 39%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+}
+
+.seven.columns {
+    flex: 0 0 57%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+
+
+/* header */
 .header {
     background-color: #FFFFFF;
     border-bottom: 1px solid #F3F3F3;
@@ -110,14 +162,9 @@ p {
   transform: rotate(-45deg) translate(5px, -5px);
 }
 
-main {
-    display: block;
-}
+/* main */
 
-.landing-image {
-    width: 100%;
-    max-width: 100%;
-    height: auto;
+main {
     display: block;
 }
 
@@ -130,6 +177,16 @@ main {
     max-width: 60vw;
     margin: 0 auto;
 }
+
+/* landing page */
+
+.landing-image {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
 
 .landing .container {
     max-width: 100%;
@@ -153,6 +210,8 @@ main {
   margin-top: 10px;
 }
 
+/* ecosystem */
+
 .ecosystem .container {
     width: 100%;
     padding-top: 110px;
@@ -167,16 +226,6 @@ main {
     gap: 40px;
 }
 
-.five.columns {
-    flex: 0 0 39%;
-    box-sizing: border-box;
-}
-
-.seven.columns {
-    flex: 0 0 57%;
-    box-sizing: border-box;
-}
-
 .seven.columns img {
     width: 100%;
     height: auto;
@@ -184,14 +233,12 @@ main {
     margin-bottom: 20px;
 }
 
-.why-us-section {
-    margin-bottom: 55px;
-}
 
 .why-us-section h3 {
-    font-size: 1.25rem;
+    font-size: 1.2rem;
     margin-bottom: 10px;
     color: #424242;
+    font-weight:500
 }
 
 .why-us-section p {
@@ -200,18 +247,8 @@ main {
     color: #656565;
 }
 
-.links a {
-    display: inline-block;
-    margin: 10px 20px 0 0;
-    text-decoration: none;
-    color: #387ED1;
-    font-weight: 500;
-    transition: color 0.3s ease;
-}
 
-.links a:hover {
-    color: #2a61b1;
-}
+/* pricing section*/
 
 .pricing {
   width: 60vw;
@@ -221,80 +258,62 @@ main {
   border-top: 1px solid #eee;
 }
 
-.pricing .row {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  flex-wrap: wrap;
-  gap: 40px;
-}
-
-.pricing .five.columns {
-  flex: 0 0 40%;
-}
-
-.pricing .five.columns h2 {
-  font-size: 2rem;
-  margin-bottom: 20px;
-  color: #222;
-}
-
-.pricing .five.columns p {
-  font-size: 1.1rem;
-  line-height: 1.8;
-  color: #555;
-}
-
-.pricing .seven.columns {
-  flex: 0 0 55%;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  flex-wrap: wrap;
-  gap: 25px;
-}
-
 .pricing-box {
-  text-align: center;
+  display: flex;
+  flex-direction: column; 
+  justify-content: flex-end; 
+  align-items: center; 
   flex: 1 1 30%;
-  border: 1px solid #f2f2f2;
-  border-radius: 8px;
-  padding: 25px 10px;
-  transition: all 0.3s ease;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
   background-color: #fff;
-}
-
-.pricing-box:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  text-align: center;
 }
 
 .pricing-box img {
-  width: 60px;
+  width: 100%;
   height: auto;
-  margin-bottom: 15px;
+  object-fit: contain;
+  margin-bottom: auto; 
 }
 
 .pricing-box p {
-  font-size: 1rem;
-  color: #444;
-  line-height: 1.4;
+  font-size: 14px;
+  margin-top: 10px;
 }
 
-.pricing .links {
-  margin-top: 30px;
-  text-align: left;
-  width: 100%;
+
+
+/*varsity section */
+
+.varsity-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
 }
 
-.pricing .links a {
-  text-decoration: none;
-  color: #387ED1;
-  font-weight: 500;
-  transition: color 0.3s ease;
+.varsity-img {
+    flex: 0 0 50%;
+}
+.varsity-box {
+    flex: 0 0 50%;
 }
 
-.pricing .links a:hover {
-  color: #2a61b1;
+/* signup section*/
+
+.open-account {
+    padding-top: 80px;
+}
+
+
+.open-account-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.open-account-container h3{
+margin-bottom: 5px;
+}
+
+#btn2 {
+    margin: 16px;
 }
