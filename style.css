@@ -44,21 +44,22 @@ p {
     opacity: 0;
     pointer-events: none;
 
-    background: rgba(255, 255, 255, 0.15);  /* semi-transparent */
-    backdrop-filter: blur(8px);             /* soft blur for glass effect */
-    color: #387ED1;
-    border: 1px solid rgba(255,255,255,0.3);
-    border-radius: 50%;
-    width: 60px;
-    height: 60px;
-    font-size: 2rem;
+    background: linear-gradient(135deg, #387ED1, #5AA0F5);
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    padding: 12px 28px;
+    font-size: 1rem;
+    font-weight: 500;
     cursor: pointer;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
     transition: transform 0.4s ease, opacity 0.4s ease, box-shadow 0.3s ease, background 0.3s ease;
     z-index: 1000;
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: 8px;
+    white-space: nowrap;
 }
 
 #back-to-top.show {
@@ -68,16 +69,16 @@ p {
 }
 
 #back-to-top:hover {
-    box-shadow: 0 12px 28px rgba(0,0,0,0.2);
-    transform: scale(1.1);
-    background: rgba(255,255,255,0.25);
+    transform: scale(1.05);
+    box-shadow: 0 12px 28px rgba(0,0,0,0.3);
+    background: linear-gradient(135deg, #5AA0F5, #387ED1);
 }
 
 #back-to-top:active {
-    transform: scale(1.05);
-    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
-    background: rgba(255,255,255,0.2);
+    transform: scale(1);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
 }
+
 
 
 .button {
